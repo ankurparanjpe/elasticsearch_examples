@@ -30,6 +30,7 @@ Create the mapping for the user index and type of profile.
 # data sets where the cost of parsing the source is high. I'm only using this as an 
 # example for you to let you know it's possible.
 
+#string type is depreciated from ES6 version. Instead of "string" use "text" or "keyword" below
 curl -XPUT http://localhost:9200/user/_mapping/profile?pretty=true -H 'Content-Type: application/json' -d '
 {
     "profile" : {
