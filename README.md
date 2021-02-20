@@ -29,7 +29,7 @@ Create the mapping for the user index and type of profile.
 # the field in the index itself rather than the _source. This is only used for large 
 # data sets where the cost of parsing the source is high. I'm only using this as an 
 # example for you to let you know it's possible.
-
+#Also we need to involve "include_type_name=true"
 curl -XPUT http://localhost:9200/user/_mapping/profile?pretty=true -H 'Content-Type: application/json' -d '
 {
     "profile" : {
